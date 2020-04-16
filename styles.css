@@ -1,0 +1,45 @@
+h1 {
+  color:blue;
+  text-align: center;
+}
+p{
+  color:red;
+}
+div{
+  border: 3px dotted black;
+  background-color: teal;
+  width:500px;
+  height:400px;
+  margin: 30px;
+  padding:50px;
+  font-family: Arial,sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+table{
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 50%;
+}
+th,td{
+  border: 1px solid black;
+  padding:5px;
+  text-align: center;
+}
+th{
+  background-color: lightgray;
+}
+#top{
+  font-size:36px;
+  color:red;
+}
+#middle{
+  font-size: 24px;
+}
+#bottom{
+  font-size: 16px;
+}
+.name{
+  font-weight: bold;
+  color:blue;
+}
