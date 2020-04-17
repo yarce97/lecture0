@@ -1,0 +1,44 @@
+<!<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+    <!--viewport visable area on screen adjust to actual device size-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @media print{
+        .screen-only{
+          display: none;
+        }
+      }
+      @media (min-width: 500px){
+        body{
+          background-color:red;
+        }
+      }
+      @media (max-width: 499px){
+        body{
+          background-color:blue;
+        }
+      }
+      @media (min-width:500px){
+        h2::before{
+          content:"Welcome minwidth";
+        }
+      }
+      @media maxmin-width:499px){
+        h2::before{
+          content:"Welcome maxwidth ";
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p class="screen-only">This paragraph wont appear when print screen</p>
+    <h1>Welcome to web page!</h1>
+    <h2></h2>
+  </body>
+</html>
