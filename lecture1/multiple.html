@@ -1,0 +1,76 @@
+<!<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+    <style>
+      h1, h2{ /**and*/
+        color:red;
+      }
+      ol li { /*descendent underneath of */
+        color:blue;
+      }
+      ul > li{ /*immediate child selectir*/
+        color:purple;
+      }
+      input[type=text]{ /*Atrribute selector */
+        background-color: red;
+      }
+      input[type=number]{
+        background-color:yellow;
+      }
+      button{
+        width:200px;
+        height:50px;
+        font-size: 24px;
+        background-color: green;
+      }
+      button:hover{/*Change style based on state of class*/
+        background-color:orange;
+      }
+      a::before{ /*make modifications psedu link*/
+        content:"\21d2 Click here: ";
+        font-weight: bold;
+      }
+      p::selection{/*when selected*/
+        color:red;
+        background-color:yellow;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Big headline</h1>
+    <h2>Smaller headline</h2>
+    <ol>
+      <li>List iten one</li>
+      <li>list item two</li>
+      <ul>
+        <li>sublist 1</li>
+        <li>sublist 2</li>
+      </ul>
+      <li>list item three</li>
+    </ol>
+    <ul>
+      <li> ither</li>
+    </ul>
+    <ul>
+      <li>other thing</li>
+    </ul>
+    <form>
+      <input type="text" name="name" placeholder="First nAME">
+      <input name="name" type="text" placeholder="Last Name">
+      <input name="name" type="number" placeholder="Age">
+    </form>
+    <button>Click me!</button>
+    <ul>
+      <li><a href="#">One link</a></li>
+      <li><a href="#">another link</a></li>
+      <li><a href="#">third link</a></li>
+    </ul>
+    <p>
+      One of the the things we do here is old.
+    </p>
+
+  </body>
+</html>
